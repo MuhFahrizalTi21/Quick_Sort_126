@@ -53,7 +53,7 @@ namespace Quick_Sort_126
         public void q_sort (int low, int high)
         {
             int pivot, i, j;
-            if (low < high)
+            if (low > high)
                 return;
 
             //partition the list into two parts:
@@ -63,7 +63,7 @@ namespace Quick_Sort_126
             i = low + 1;
             j = high;
 
-            pivot = arr[i];
+            pivot = arr[low];
 
             while (i <= j)
             {
@@ -76,9 +76,9 @@ namespace Quick_Sort_126
                 cmp_count++;
 
                 //search for an element less than or equal to pivot
-                while((arr[j] <= pivot) && (j <= high))
+                while((arr[j] > pivot) && (j >= low))
                 {
-                    j++;
+                    j--;
                     cmp_count++;
                 }
                 cmp_count++;
@@ -110,7 +110,7 @@ namespace Quick_Sort_126
             Console.WriteLine("\n Sorted array elements");
             Console.WriteLine("\n -----------------------------");
 
-            for (int j =0; j < n; j++)
+            for (int j = 0; j < n; j++)
             {
                 Console.WriteLine(arr[j]);
             }
