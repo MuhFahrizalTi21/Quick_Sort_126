@@ -28,6 +28,9 @@ namespace Quick_Sort_126
                 else
                     Console.WriteLine("\n array can have maximum 20 elements \n");
             }
+            Console.WriteLine("=========================");
+            Console.WriteLine("Enter Array Elements");
+            Console.WriteLine("=========================");
         }
         static void Main(string[] args)
         {
