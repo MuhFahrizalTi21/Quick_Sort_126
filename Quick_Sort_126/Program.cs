@@ -117,6 +117,10 @@ namespace Quick_Sort_126
             Console.WriteLine("\n Number of comparisons : " + cmp_count);
             Console.WriteLine("\n Number of data movements : " + mov_count);
         }
+        int getSize()
+        {
+            return (n);
+        }
         static void Main(string[] args)
         {
         }
