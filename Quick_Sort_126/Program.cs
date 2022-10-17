@@ -16,6 +16,19 @@ namespace Quick_Sort_126
         //number of elements in array
         private int n;
 
+        void read()
+        {
+            while(true)
+            {
+                Console.Write("Enter the number of elements in the array : ");
+                string s = Console.ReadLine();
+                n = Int32.Parse(s);
+                if (n <= 20)
+                    break;
+                else
+                    Console.WriteLine("\n array can have maximum 20 elements \n");
+            }
+        }
         static void Main(string[] args)
         {
         }
