@@ -13,6 +13,9 @@ namespace Quick_Sort_126
         private int cmp_count = 0;
         private int mov_count = 0;
 
+        //number of elements in array
+        private int n;
+
         static void Main(string[] args)
         {
         }
